@@ -1,0 +1,47 @@
+section {
+    color: green;
+}
+p {
+    font-family: sans-serif;
+    font-size: 130%;
+}
+.discounted_bargain {
+  color: red;
+}
+
+.damaged_stock {
+  background: yellow;
+}
+
+#special_section {
+  background: yellow;
+}
+
+h1 { font-size: 240%; }
+h2 { font-size: 150%; }
+h3 { font-size: 125%; }
+
+h1, h2, h3 {
+  color: #e40505;
+}
+
+[data-tip] {
+    position: relative;
+    cursor: help;
+    }
+
+    /* The tooltip itself */
+    [data-tip]:hover::after,
+    [data-tip]:focus::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: 100%;      /* above the element */
+    left: 0;
+    background: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 999;
+    }
